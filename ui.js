@@ -1,60 +1,60 @@
 GM_config.init(
 {
-  'id': 'MyConfig',
+  'id' : 'MaConfig',
   'title': '[Vib-R] GrepoUtils v1.1.2',
-  'fields': // Fields object
+  'fields' : // objet champs
   {
-    'TozsdeBot_Enabled':
+    'TozsdeBot_Enabled' :
     {
-      'label': 'Bekapcsolva',
-      'section': ['TőzsdeBot'],
-      'title': 'Be legyen-e kapcsolva a tőzsdebot.',
-      'type': 'checkbox',
-      'default': false
+      'étiquette' : 'Activé',
+      'section' : ['ExchangeBot'],
+      'title': 'Si le débit de stock doit être activé.',
+      'type' : 'case à cocher',
+      'par défaut' : faux
     },
-     'TozsdeBot_TickInterval':
+     'TozsdeBot_TickInterval' :
     {
-      'label': 'Gyakoriság',
-      'type': 'int',
-      'title': 'Hány másodpercenként váltson át a következő városra.',
-      'default': '5'
+      'étiquette' : 'Fréquence',
+      'type' : 'entier',
+      'title': 'Combien de secondes pour passer à la prochaine ville.',
+      'par défaut' : '5'
     },
     'TozsdeBot_MinimalResource':
     {
-      'label': 'Minimum nyersanyagmennyiség',
-      'type': 'int',
-      'title': 'Mennyi legyen a minimum nyersanyag, amit elküld a tőzsdére.',
-      'default': '150'
+      'label' : 'Quantité minimale de matière première',
+      'type' : 'entier',
+      'title': 'Quel devrait être le produit minimum que vous envoyez à la bourse.',
+      'par défaut' : '150'
     },
-    'TozsdeBot_CaptchaDetection':
+    'TozsdeBot_CaptchaDetection' :
     {
-      'label': 'Captcha-felismerés',
-      'title': 'Felismeri, ha megjelenik a captcha.',
-      'type': 'checkbox',
-      'default': true
+      'label' : 'Captcha détection',
+      'title': 'Reconnaît quand le captcha est affiché.',
+      'type' : 'case à cocher',
+      'par défaut' : vrai
     },
     'TozsdeBot_URL':
     {
       'label': 'Captcha Hang URL',
-      'type': 'text',
-      'title': 'Ha megjelenik a captcha, lejátssza ezt a hangot.',
-      'size': 250,
-      'default': 'https://notificationsounds.com/storage/sounds/file-sounds-1134-open-up.mp3'
+      'type' : 'texte',
+      'title': 'Si le captcha est affiché, jouez ce son.',
+      'taille' : 250,
+      'par défaut' : 'https://notificationsounds.com/storage/sounds/file-sounds-1134-open-up.mp3'
     },
-    'AntiGrepolisUpdate_Enabled':
+    'AntiGrepolisUpdate_Enabled' :
     {
-      'label': 'Bekapcsolva',
-      'section': ['Oldal frissítése a grepolis szerverek frissülése után'],
-      'title': 'Be legyen-e kapcsolva az oldalfrissítés. (Percenként nézi)',
-      'type': 'checkbox',
-      'default': false
+      'étiquette' : 'Activé',
+      'section': ['Actualiser la page après mise à jour des serveurs grepolis'],
+      'title': 'Pour actualiser la page. (Regarde chaque minute) ',
+      'type' : 'case à cocher',
+      'par défaut' : faux
     },
-    'Cities':
+    'Villes':
     {
-      'label': 'Városok', // Appears next to field
-      'type': 'select', // Makes this setting a dropdown
-      'options': ['-'], // Possible choices
-      'default': '-' // Default value if user doesn't change it
+      'label' : 'Városok', // Apparaît à côté du champ
+      'type' : 'select', // Fait de ce paramètre une liste déroulante
+      'options' : ['-'], // Choix possibles
+      'default' : '-' // Valeur par défaut si l'utilisateur ne la modifie pas
     }
   }
 });
